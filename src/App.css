@@ -1,38 +1,203 @@
+/* General styles */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; 
+}
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.custom-navbar {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #dc3545;
+  padding: 1rem;
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 1000;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  width: 100%;
+  box-sizing: border-box;
+}
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  font-weight: 700;
+  color: #fff; /* Brand color */
+}
+.custom-navbar.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.custom-navbar .navbar-nav {
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+.custom-navbar .nav-link {
+  text-align: center;
+}
+.custom-navbar .navbar-brand {
+  font-size: 1.2rem; 
+  font-weight: bold;
+  color: #fff;
+}
+.custom-navbar .navbar-collapse {
+  justify-content: flex-end;
+  
+}
+.nav-item {
+  font-size: 2rem; 
+  margin-left: 1rem; 
+  white-space: nowrap; 
+}
+.navbar-brand:hover {
+  color: #0056b3 !important;
+}
+.logo {
+  height: 50px; 
+  margin-right: 10px; 
+}
+h1, h2, h3, p, a {
+  font-family: "Montserrat", sans-serif;
+}
+.navbar-nav .nav-link {
+  margin-left: 15px; 
+  color: #fff; 
+  font-weight: 600;
+  font-size: 17px;
+}
+.navbar-nav .nav-link:hover {
+  color: #f8d7da; 
+}
+.nav-item:hover {
+  color: #0056b3 !important;
+}
+nav .navbar-toggler:focus {
+  box-shadow: none; 
+}
+.active-link {
+  color: green !important; 
 }
 
-.App-link {
-  color: #61dafb;
+/* Footer styles (if applicable) */
+.footer-social-icons li:hover svg {
+  fill: #212529;
+}
+.btn {
+  margin-right: 78px;
+}
+.footer-navigation li:hover {
+  color: #212529;
+}
+.footer-social-icons svg {
+  margin-right: 38px; 
+}
+.custom-button {
+  white-space: nowrap;
+}
+.footer-social-icons li {
+  display: inline-block;
+}
+.footer-heading {
+  position: relative;
+  display: inline-block;
+  color: #d8232a;
+  font-weight: bold;
+  margin-bottom: 20px; 
+}
+.footer-heading::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 5px; 
+  background-color: #d8232a;
+  position: absolute;
+  left: 0;
+  bottom: -10px; 
+  transform: skewX(-20deg); 
+}
+.footer-links {
+  padding: 0;
+  list-style: none;
+}
+.footer-link {
+  padding: 0;
+  list-style: none;
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color:#000 ;
+}
+.footer-link:hover {
+  color: #dc3545; 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Responsive styles */
+@media only screen and (min-width: 1400px) {
+  .custom-navbar {
+    padding: 0.5rem 1rem;
+    justify-content: space-between;
   }
-  to {
-    transform: rotate(360deg);
+  .custom-navbar .navbar-nav {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  .custom-navbar .nav-link {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+  }
+  .navbar-collapse {
+    background-color: #dc3545;
+    padding: 1rem;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .custom-navbar {
+    padding: 0.5rem 1rem;
+    justify-content: space-between;
+  }
+  .custom-navbar .navbar-nav {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  .custom-navbar .nav-link {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+  }
+  .navbar-collapse {
+    background-color: #dc3545;
+    padding: 1rem;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .nav-item {
+    font-size: 1.5rem; 
+    margin-left: 0;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .nav-item {
+    font-size: 1.2rem;
+  }
+  .navbar-brand {
+    font-size: 1rem;
+  }
+  .navbar-nav {
+    flex-direction: column;
+  }
+  .navbar-collapse {
+    background-color: #dc3545;
+    width: 100%;
   }
 }

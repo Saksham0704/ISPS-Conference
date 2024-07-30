@@ -1,0 +1,20 @@
+.speaker-page header {
+  background-image: linear-gradient(rgba(5, 10, 35, 0.75), rgba(5, 10, 35, 0.75)), url(../../utils/images/final.jpg);
+  margin:0px;
+
+  
+}
+
+.speaker-page header {
+    height: 850px; 
+    padding-top:350px;
+    background-size: cover; 
+  }
+
+
+  .header-gradient {
+    background: linear-gradient(to right, #708090, #dc3545);
+    color: white;
+    padding: 20px 0;
+  }
+  

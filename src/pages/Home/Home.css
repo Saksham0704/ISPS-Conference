@@ -1,0 +1,170 @@
+body {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+  box-sizing: border-box;
+}                                     
+
+.home-page header {
+  background-image: linear-gradient(rgba(5, 10, 35, 0.75), rgba(5, 10, 35, 0.75)), url(../../utils/images/final.jpg);
+  background-size: cover; /* Adjusts the background image to cover the entire container */
+  background-position: center; /* Centers the background image */
+  background-repeat: no-repeat; /* Prevents the background image from repeating */
+  background-attachment: fixed; /* Keep the background image fixed */
+  background-color: rgba(5, 10, 35, 0.75);
+  padding: 50px; /* Adjust padding as needed */
+  margin: 0; /* Adjust margin as needed */
+}
+.text-failure {
+  color: #dc3545;
+}
+
+header {
+    background-size: cover;
+    background-position: center;        
+}
+.title {
+    margin-bottom: 50px;
+    margin-top:20px;
+    text-align:center;
+  }
+  
+  .image_wrapper {
+    margin: 0px 30px;
+  }
+  
+  .image_wrapper img {
+    width: 80%;
+  }
+  .bttn {
+    padding: 20px;
+    font-size: 1.2rem;
+    font-weight:400;
+    background-image: linear-gradient(to right, #39c910, #175788, #175788, #f09819);
+    box-shadow: 0 4px 15px 0 rgba(83, 176, 57, 0.75);
+    border: none;
+    color: #fff;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  .bttn:hover {
+    cursor: pointer;
+    background-image: linear-gradient(to left, #f09819,#175788, #175788, #175788);
+    transition: all 0.4s ease-in-out;
+  }
+  
+  .btn-spl-hover {
+    width: auto;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    padding: 0 15px;
+    text-align: center;
+    background-size: 300% 100%;
+    border-radius: 0px;
+    transition: all 0.4s ease-in-out;
+  }
+  .bttnn{
+    width: auto;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff; 
+    background-color:green;
+    margin: 20px;
+    height: 55px;
+    padding: 0 15px;
+    text-align: center;
+    background-size: 300% 100%;
+    border-radius: 0px;
+  }
+  
+  
+/*   
+  .btn-spl-hover {
+    width: auto;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    padding: 0 15px;
+    text-align: center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 0px;
+    transition: all 0.4s ease-in-out;
+  } */
+  .important-dates {
+    width: 300px;
+    border: 1px solid #ccc;
+    padding: 16px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .title {
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  
+  .date-item {
+    margin-bottom: 16px;
+  }
+  
+  .event {
+    font-weight: bold;
+  }
+  
+  .date {
+    margin-left: 8px;
+  }
+  
+  .crossed {
+    text-decoration: line-through;
+    color: red;
+  }
+  
+  .updated {
+    color: green;
+  }
+ 
+  .mt-5, .my-5 {
+    margin-top: 3rem !important;
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+.container, .container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+}
+
+
+.custom-tabs .nav-link {
+  color: #fff;
+}
+
+.custom-tabs .nav-link.active {
+  background-color: #005d99;
+  color: #fff;
+}
+ tab title{
+  color:#fff;
+ }
+/* .blog-section {
+    background-image: linear-gradient(rgba(5, 10, 35, 0.75), rgba(5, 10, 35, 0.75)), url(../../utils/images/blog-section-img.jpg);
+    background-size: cover;
+    background-position: center;
+} */
+ /* background-image: linear-gradient(to right, #f09819, #175788, #175788, #39c910); */
